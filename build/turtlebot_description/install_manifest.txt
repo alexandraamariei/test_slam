@@ -1,0 +1,17 @@
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/urdf/robot.urdf.xacro
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/launch/sim.launch.py
+/home/alex/21iulie_ws/install/turtlebot_description/share/ament_index/resource_index/package_run_dependencies/turtlebot_description
+/home/alex/21iulie_ws/install/turtlebot_description/share/ament_index/resource_index/parent_prefix_path/turtlebot_description
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.sh
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/environment/ament_prefix_path.dsv
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/environment/path.sh
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/environment/path.dsv
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/local_setup.bash
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/local_setup.sh
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/local_setup.zsh
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/local_setup.dsv
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/package.dsv
+/home/alex/21iulie_ws/install/turtlebot_description/share/ament_index/resource_index/packages/turtlebot_description
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig.cmake
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/cmake/turtlebot_descriptionConfig-version.cmake
+/home/alex/21iulie_ws/install/turtlebot_description/share/turtlebot_description/package.xml
