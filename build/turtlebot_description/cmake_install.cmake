@@ -46,6 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_description" TYPE DIRECTORY FILES
     "/home/alex/21iulie_ws/src/turtlebot_description/urdf"
     "/home/alex/21iulie_ws/src/turtlebot_description/launch"
+    "/home/alex/21iulie_ws/src/turtlebot_description/rviz"
     )
 endif()
 

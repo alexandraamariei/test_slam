@@ -7,22 +7,20 @@ from launch_ros.actions import Node
 import xacro
 
 def generate_launch_description():
-    pkg_name = 'turtlebot_description'
-    pkg_path = os.path.join(get_package_share_directory(pkg_name))
+    pkg_path = get_package_share_directory('turtlebot_description')
+    xacro_file = os.path.join(pkg_path, 'urdf', 'robot.urdf.xacro') # sau .urdf
     
-    # 1. Procesăm fișierul Xacro
-    xacro_file = os.path.join(pkg_path, 'urdf', 'robot.urdf.xacro')
-    doc = xacro.process_file(xacro_file)
-    robot_description = {'robot_description': doc.toxml()}
+    # Transformăm xacro în xml dacă este cazul
+    robot_description_config = xacro.process_file(xacro_file)
+    robot_description = {'robot_description': robot_description_config.toxml()}
 
-    # 2. Nodul Robot State Publisher 
+    # 1. Nodul obligatoriu care publică base_link și restul pieselor
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[robot_description, {'use_sim_time': True}] # <--- Aici am adăugat timpul!
+        parameters=[robot_description, {'use_sim_time': True}]
     )
-
     # 3. Porniți Gazebo Harmonic
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(

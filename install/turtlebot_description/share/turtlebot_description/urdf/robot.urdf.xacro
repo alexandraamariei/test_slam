@@ -6,10 +6,10 @@
     <material name="blue"><color rgba="0.2 0.2 0.8 1"/></material>
     
     <!-- LINK DE BAZĂ -->
-    <link name="base_footprint"/>
+    <link name="base_link"/>
 
     <joint name="base_joint" type="fixed">
-        <parent link="base_footprint"/>
+        <parent link="base_link"/>
         <child link="chassis"/>
         <origin xyz="0 0 0.05" rpy="0 0 0"/>
     </joint>
@@ -134,7 +134,7 @@
             <odom_topic>/odom</odom_topic>
             <tf_topic>/tf</tf_topic>
             <frame_id>odom</frame_id>
-            <child_frame_id>base_footprint</child_frame_id>
+            <child_frame_id>base_link</child_frame_id>
             <odom_publish_frequency>30</odom_publish_frequency>
         </plugin>
         
